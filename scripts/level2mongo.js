@@ -2,7 +2,8 @@
 
 var LevelStorage = require('../lib/storage_leveldb');
 var MongoStorage = require('../lib/storage');
-var Bitcore = require('bitcore-lib-dash');
+// var Bitcore = require('bitcore-lib-dash'); // TEMPLATEX
+var Bitcore = require('litecore-lib');
 
 var level = new LevelStorage({
   dbPath: './db',

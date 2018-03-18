@@ -1,7 +1,10 @@
 var config = {
   basePath: '/bws/api',
   disableLogs: false,
-  port: 3232,
+  port: 3232, // TEMPLATEX
+
+// let's put all the configurable toggles in HERE, where it makes sense
+
 
   // Uncomment to make BWS a forking server
   // cluster: true,
@@ -40,15 +43,18 @@ var config = {
   blockchainExplorerOpts: {
     livenet: {
       provider: 'insight',
-      url: 'https://insight.dashevo.org',
-      apiPrefix:'/insight-api-dash'
+//       url: 'https://insight.dashevo.org', // TEMPLATEX
+//       apiPrefix:'/insight-api-dash' 
+      url: 'https://explorer.ltc.dlc.net',
+      apiPrefix:'/insight-lite-api'
     },
     testnet: {
       provider: 'insight',
-      url: 'https://testnet-insight.dashevo.org',
-      apiPrefix:'/insight-api-dash'
+//       url: 'https://testnet-insight.dashevo.org', // TEMPLATEX
+//       apiPrefix:'/insight-api-dash'
       // url: 'https://test-insight.dash.org',
-      // url: 'http://localhost:3001',
+      url: 'http://localhost:3001',
+      apiPrefix:'/insight-lite-api'
       // Multiple servers (in priority order)
       // url: ['http://a.b.c', 'https://test-insight.bitpay.com:443'],
     },
